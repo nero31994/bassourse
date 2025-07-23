@@ -1076,6 +1076,16 @@ const channels = [
             clearkey: {keyId: '4503cf86bca3494ab95a77ed913619a0',key: 'afc9c8f627fb3fb255dee8e3b0fe1d71',},
         },
     },
+  {
+  name: 'GMA',
+        category: 'Converge',
+        type: 'mpd',
+        url: 'http://143.44.136.110:6910/001/2/ch00000090990000001093/manifest.mpd?virtualDomain=001.live_hls.zte.com',
+        drm:
+        {
+            clearkey: {keyId: '31363231383438333031323033393138',key: '38694e34324d543478316b7455753437',},
+        },
+    },
     {
         "category": "Converge",
         "name": "A2Z",
