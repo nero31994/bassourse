@@ -1,54 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>NxB IPTV</title>
-<link rel="icon" type="image/png" href="NxB IPTV.png">
-<script src="https://fle-rvd0i9o8-moo.com/player/jw8_26/jwplayer.js"></script>
-<script>jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";</script>
-    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
-<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
-<link rel="stylesheet" href="styles.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NxB IPTV</title>
+  <link rel="icon" type="image/png" href="NxB IPTV.png">
+  <script src="https://fle-rvd0i9o8-moo.com/player/jw8_26/jwplayer.js"></script>
+  <script>
+    jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo";
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@latest'></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body class="dark-theme">
-<div class="container">
+  <div class="container">
     <div class="video-container">
-        <!--<div id="clock"></div>-->
-        <div id="player"></div>
-        <div id="fallbackMessage"></div>
+      <!--<div id="clock"></div>-->
+      <div id="player"></div>
+      <div id="fallbackMessage"></div>
     </div>
 
     <aside class="sidebar">
-        <div class="top-controls">
-            <div class="theme-toggle">
-              <input type="checkbox" id="themeSwitch"/>
-              <span class="slider"></span>
-                <div class="channel-text">NxB IPTV</div>
-            </div>
-            <div id="channelCount"></div>
-            <select id="categoryFilter" onchange="setupChannelList()">
-            </select>
-        </div>
-
-        <div class="list-container">
-            <ul class="channel-list" id="channelList"></ul>
-        </div>
-        <div class="search-container">
-          <input
+      <!-- Moved search bar to the top -->
+      <div class="search-container">
+        <input
           class="search-input"
           type="search"
           placeholder="🔍︎ Search channels..."
           oninput="setupChannelList()"
           id="searchInput"
           aria-label="Search channels"
-          />
+        />
+      </div>
+
+      <div class="top-controls">
+        <div class="theme-toggle">
+          <input type="checkbox" id="themeSwitch" />
+          <span class="slider"></span>
+          <div class="channel-text">NxB IPTV</div>
+        </div>
+        <div id="channelCount"></div>
+        <select id="categoryFilter" onchange="setupChannelList()">
+        </select>
+      </div>
+
+      <div class="list-container">
+        <ul class="channel-list" id="channelList"></ul>
       </div>
     </aside>
-</div>
+  </div>
 
-<script src="script.js"></script>
-<script src="channels.js"></script>
+  <script src="script.js"></script>
+  <script src="channels.js"></script>
 </body>
 </html>
