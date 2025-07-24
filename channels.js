@@ -1080,7 +1080,7 @@ const channels = [
   name: 'GMA',
         category: 'Converge',
         type: 'mpd',
-        url: 'http://143.44.136.110:6910/001/2/ch00000090990000001093/manifest.mpd?virtualDomain=001.live_hls.zte.com',
+        url: 'https://bunproxy.azurewebsites.net/api/001/2/ch00000090990000001093/manifest.mpd?virtualDomain=001.live_hls.zte.com',
         drm:
         {
             clearkey: {keyId: '31363231383438333031323033393138',key: '38694e34324d543478316b7455753437',},
